@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta property="og:title" content="Mr.Bunny404">
+    <link href="https://mynameisrosita.nasiwebhost.com/profile/snakesec.png" rel="icon" type="image/x-icon">
+    <meta property="og:image" content="https://mynameisrosita.nasiwebhost.com/profile/snakesec.png">
+    <meta http-equiv="cache-control" content="index,cache">
+    <meta http-equiv="pragma" content="index,cache">
+    <meta name="keywords" content="Mr.Bunny404">
+    <meta charset="utf-8">
+    <title>Mr.Bunny404</title>
+    <link href="https://fonts.googleapis.com/css?family=Kelly+Slab" rel="stylesheet">
+    <style type="text/css">
+        html {
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            background-attachment: fixed;
+            color: #fff;
+            text-align: center;
+            font-family: "Kelly Slab", sans-serif;
+            margin: 0;
+            font-weight: 60;
+            height: 60vh;
+            transition: background-image 1s ease-in-out;
+        }
+
+        body, font, .button-like, .footer-greetings marquee {
+            text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+        }
+
+        .button-like {
+            display: inline-block;
+            padding: 15px 25px;
+            background-color: #3498db;
+            color: #ffffff;
+            font-size: 2.2em;
+            border: 2px solid #2980b9;
+            border-radius: 15px;
+            margin: 10px;
+            text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+        }
+
+        .fade-img {
+            width: 700px;
+            opacity: 1;
+            animation: fadeEffect 5s infinite alternate;
+        }
+
+        @keyframes fadeEffect {
+            0% {
+                opacity: 0.2;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        .category-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 50px;
+        }
+
+        .category {
+            background-color: #34495e;
+            padding: 20px;
+            width: 250px;
+            border-radius: 10px;
+            cursor: pointer;
+            text-align: center;
+        }
+
+        .category:hover {
+            transform: scale(1.05);
+            transition: transform 0.3s;
+        }
+
+        .category img {
+            width: 80%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .category-title {
+            font-size: 1.5em;
+            color: #e74c3c;
+            margin-top: 10px;
+        }
+
+        .back-button {
+            margin-top: 30px;
+            padding: 15px 25px;
+            background-color: #3498db;
+            color: white;
+            font-size: 2.0em;
+            border: 2px solid #2980b9;
+            border-radius: 15px;
+            text-decoration: none;
+        }
+
+        .back-button:hover {
+            background-color: #2980b9;
+        }
+
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="homePage">
+        <script>
+            const backgrounds = [
+                "https://od.lk/s/OV8yNDc4NTE3Mjhf/ce8eae407a47fb16cd7e70e6dfdfab2f.png",
+                "https://od.lk/s/OV8yNDc4NTE2NjRf/bf78cf88de68d9fdcf39985c50586bf1.png",
+                "https://od.lk/s/OV8yNDc4NTE2NjNf/9c15bfde200038e283e66cd4d1f00683.png"
+            ];
+
+            let currentIndex = 0;
+
+            function changeBackground() {
+                document.documentElement.style.backgroundImage = `url(${backgrounds[currentIndex]})`;
+                currentIndex = (currentIndex + 1) % backgrounds.length;
+            }
+
+            setInterval(changeBackground, 5000);
+            changeBackground();
+        </script>
+        <br>
+        <i><br>
+            <img title="Mr.Bunny404" src="https://files.catbox.moe/xs5o7p.png" class="fade-img"><br>
+            <font size="10" color="red">INDONESIA GELAP</font><br><br>
+            <hr>
+
+            <div id="typing-effect" style="font-size: 1.5em; color: white; font-weight: bold; padding: 20px;"></div>
+
+            <script>
+                const text = "RIP Sila ke-2 Pancasila \nDisini Masyarakat Hanya Di Anggap Sebagai perbudakan yang mudah untuk di bungkam dan di peras\nDimana Yang lemah Akan Ditindas Dan Yang Beruang Akan Di JUNJUNG,";
+                let index = 0;
+
+                function typeWriter() {
+                    if (index < text.length) {
+                        document.getElementById("typing-effect").innerHTML += text.charAt(index);
+                        index++;
+                        setTimeout(typeWriter, 200);
+                    }
+                }
+
+                typeWriter();
+            </script>
+        <div class="footer-greetings"><hr>
+            <marquee><font size="7" color="red"><b>SUARA RAKYAT INDONESIA</font></marquee>
+        </div>
+        <hr><br>
+        <audio id="audioPlayer" controls autoplay loop>
+    <source id="audioSource" src="" type="audio/mp3">
+    Your browser does not support the audio element.
+</audio>
+
+<script>
+    const audioFiles = [
+        "https://files.catbox.moe/bgzaob.mp3"
+    ];
+
+    function playRandomAudio() {
+        const randomIndex = Math.floor(Math.random() * audioFiles.length);
+        const audioElement = document.getElementById('audioPlayer');
+        const audioSource = document.getElementById('audioSource');
+        audioSource.src = audioFiles[randomIndex];
+        audioElement.load();
+        audioElement.play();
+    }
+    window.onload = playRandomAudio;
+        // Function to show the store page when the "TOOLSV5" button is clicked
+        function showStore() {
+            document.getElementById("homePage").classList.add("hidden");
+            document.getElementById("storePage").classList.remove("hidden");
+        }
+
+        // Function to navigate back to the home page from the store page
+        function goBackToHome() {
+            document.getElementById("storePage").classList.add("hidden");
+            document.getElementById("homePage").classList.remove("hidden");
+        }
+    </script>
+
+    <!-- Footer with navigation to social media or contact links -->
+    <div id="footer">
+        <br>
+        <footer style="text-align: center;">
+            <p>&copy; 2025 Mr.Bunny404</p>
+            <p><a href="https://tiktok.com/@mr.bunny_official404" target="_blank" style="color: #3498db;">TikTok</a> | <a href="https://www.youtube.com/@Bunnynotsurend" target="_blank" style="color: #3498db;">Youtube</a> | <a href="https://www.instagram.com/yanbes_anak_baik?igsh=c2phaHlkbWRqYmFs" target="_blank" style="color: #3498db;">Instagram</a></p>
+        </footer>
+    </div>
+
+</body>
+</html>
